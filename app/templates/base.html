@@ -1,0 +1,7 @@
+<ul class="nav navbar-nav navbar-right">
+    {% if current_user.is_authenticated %}
+      <li><a href="{{ url_for('users.user_profile') }}">{{current_user.email}}</a></li>
+    {% else %}
+      <li><a href="#">Welcome!</a></li>
+    {% endif %}
+  </ul>
