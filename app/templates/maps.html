@@ -15,7 +15,13 @@
                                     center: [-1.2921, 36.8219],
                                     zoom: 10,
                                 });
-            
+            // {s}, {z}, {x} and {y} are placeholders for map tiles
+            // {x} and {y} are the x/y of where you are on the map
+            // {z} is the zoom level
+            // {s} is the subdomain of cartodb
+            var layer = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
+              attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="http://cartodb.com/attributions">CartoDB</a>'
+            });
           </script>
         </div>
     </body>
