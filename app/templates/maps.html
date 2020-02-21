@@ -22,6 +22,8 @@
             var layer = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
               attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="http://cartodb.com/attributions">CartoDB</a>'
             });
+            layer.addTo(map_object);
+            L.marker([-1.283329963684082, 36.81666946411133]).addTo(map_object).bindPopup("<strong>My location</strong>").openPopup();
           </script>
         </div>
     </body>
