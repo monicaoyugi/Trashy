@@ -5,6 +5,18 @@
         <script src="http://cdn.leafletjs.com/leaflet/v1.6.0/leaflet.js"></script>
     </head>
     <body>
-        
+        <div class="container-fluid">
+            <h3 class="list-group-item">Your Location</h3>
+            <div id="map" style="height: 500px;"></div>
+        <script type="text/javascript">
+            // The first parameter are the coordinates of the center of the map
+            // The second parameter is the zoom level
+            var map_object = new L.Map('map',{
+                                    center: [-1.2921, 36.8219],
+                                    zoom: 10,
+                                });
+            
+          </script>
+        </div>
     </body>
 </html>
